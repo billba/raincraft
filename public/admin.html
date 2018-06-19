@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-us" xml:lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raincraft</title>
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/9.6.0/css/fabric.min.css">
+</head>
+
+<body>
+    <h1>Welcome to Raincraft</h1>
+    <p id="error" style="color: red"></p>
+    <h2>Servers</h2>
+    <table id="servers"></table>
+    <p>
+        Add Server
+        <input type="text" width="100" id="addServerName"/>
+        <button id="addServerButton" onclick="addServer()">Add</button>
+    </p>
+    <script src="raincraft.js"></script>
+    <script>
+        listServers(true);
+    </script>
+</body>
+</html>
